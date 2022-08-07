@@ -1,0 +1,141 @@
+Body
+{
+    padding: 0;
+    margin: 0;
+    overflow:auto;
+}
+#tableheader
+{
+    position: fixed;
+}
+#line
+{
+    width: 92%;
+    border: 1px solid red;
+    background-color: red;
+    position: absolute;
+    left: 8%;
+    z-index: 1;
+}
+td, th
+{
+    height: 41px;
+    text-align: center;
+}
+#create
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+#add, #info, #callendar, #nextweek, #previousweek
+{
+    border-radius: 50%;  
+    background-color: transparent;
+    border: 0;
+    padding:0;
+    text-align: left;
+}
+#create #createwindow, #create #infowindow, #create #callendarwindow, #create #deletewindow
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 250px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+#infowindow, #callendarwindow, #createwindow, #deletewindow
+{
+    text-align: center;
+}
+img
+{
+    width: auto;
+    position: relative;
+    padding-top: 5px
+}
+th
+{
+    width: 13.15%;
+    height: 41px;
+}
+th:first-child
+{
+    width: 8%;
+    border-right: 1px solid #32363a;
+}
+#close
+{
+    float: right;
+    background-color: transparent;
+    border:0;
+    padding:0;
+}
+.box
+{
+    width: 13.15%;
+    transform: translate(0,0);
+    position: absolute;
+    float: left;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#callendar img
+{
+    width: 28px;
+    height: 32px;
+    margin-top: 2px;
+}
+@media only screen and (max-width : 1160px)
+{
+    #add, #info, #callendar, #add img, #info img
+    {
+        width: 22px;
+        margin-top: 2px;
+        height: 26px
+    }
+    #callendar img
+    {
+        width: 18px;
+        height: 24px;
+        margin-top: 2px;
+    }
+}
+div#callendarwindow
+{
+    height: 153px !important;
+}
+#nextweek, #previousweek
+{
+    padding: 5px;
+}
+div#callendarwindow p
+{
+    margin: 0;
+    height: 40px;
+}
+div#deletewindow
+{
+    height: auto !important;
+}
+#no
+{
+    border-radius: 0px 5px 5px 0px;
+}
+#yes
+{
+    border-radius: 5px 0px 0px 5px;
+}
